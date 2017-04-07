@@ -22,13 +22,13 @@
     	
         <div class="container mx-auto"> 
         
-        <!-- |||||||||||| Welcome START |||||||||||| -->
+        <!-- *********************************** Welcome START  *********************************** -->
         
         <h1>Grossmont High School Tech Club</h1>
         
-        <!-- |||||||||||| Welcome END |||||||||||| -->
+        <!-- *********************************** Welcome END *********************************** -->
         
-        <!-- |||||||||||| Announcements START |||||||||||| -->
+        <!-- *********************************** Announcements START *********************************** -->
         
         	<h3>Latest Announcements</h2>
         	<a class="twitter-timeline" href="https://twitter.com/ghs_tech_club" data-tweet-limit="3"></a>
@@ -37,9 +37,9 @@
         
         </div>
         
-        <!-- |||||||||||| Announcements END |||||||||||| -->
+        <!-- *********************************** Announcements END *********************************** -->
         
-        <!-- |||||||||||| Schedule START |||||||||||| -->
+        <!-- *********************************** Schedule START *********************************** -->
         
         <div class="container mx-auto">
         	<h3>Schedule</h3>
@@ -47,9 +47,9 @@
         	<iframe src="https://calendar.google.com/calendar/embed?src=1fnmpndjjhe3ce34t9q1bkrh0o%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"><!--id="demo" class="collapse">--></iframe>
         </div>
         
-        <!-- |||||||||||| Schedule END |||||||||||| -->
+        <!-- *********************************** Schedule END *********************************** -->
         
-        <!-- |||||||||||| Carousel START |||||||||||| -->
+        <!-- *********************************** Carousel START *********************************** -->
         
         <div class="container mx-auto">
             <h3>Image Carousel</h3>
@@ -114,7 +114,7 @@
             
 		</div>
         
-        <!-- |||||||||||| Carousel END |||||||||||| -->
+        <!-- *********************************** Carousel END *********************************** -->
         
     </body>
 </html>
