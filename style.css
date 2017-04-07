@@ -1,0 +1,11 @@
+.description {
+	color:#6A6A6A;
+	padding:6px;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* polaroid */
+.col-lg-4 {
+	padding-top: 15px;
+	background-color:#f2f2f2; 
+}

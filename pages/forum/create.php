@@ -18,7 +18,7 @@ if(isset($_POST['create_post_title'])){
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <title> | Grossmont Tech Club</title>
+        <title>Create a Post | Grossmont Tech Club</title>
         <?php include '/home/benrud/public_html/club/assets/includes/links.html'; ?>
     </head>
     
