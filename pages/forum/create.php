@@ -1,9 +1,8 @@
 <?php
-require('/home/benrud/public_html/club/database.php');
-
 $datetime = date('Y-m-d H:i:s') ;
 
 if(isset($_POST['create_post_title'])){
+	require('/home/benrud/public_html/club/database.php');
 	$pdo = Database::connect();
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$sql = "INSERT INTO posts (title,description,date_time,tags,user,post_type,category) VALUES(?, ?, ?, ?, ?, ?, ?)";
@@ -31,7 +30,7 @@ if(isset($_POST['create_post_title'])){
             <form method="post" action="create.php">
             	<div class="form-group">
                     <label for="create_post_user">Username:</label>
-                    <input type="text" name="create_post_user" class="form-control" id="create_post_user">
+                    <input type="text" name="create_post_user" maxlength="10" class="form-control" id="create_post_user">
                 </div>
                 <div class="form-group">
                     <label for="create_post_type">Post Type:</label>
@@ -40,15 +39,18 @@ if(isset($_POST['create_post_title'])){
                         <option>Help Wanted!</option>
                         <option>Question</option>
                         <option>Discussion</option>
+                        <option>Announcement</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="create_post_type">Category:</label>
                     <select class="form-control" id="create_post_category" name="create_post_category">
                     	<option selected disabled>Select</option>
-                        <option>Mobile</option>
-                        <option>Web</option>
-                        <option>Game</option>
+                        <option>mobile</option>
+                        <option>web</option>
+                        <option>game</option>
+                        <option>desktop</option>
+                        <option>other</option>
                     </select>
                 </div>
             	<div class="form-group">
@@ -57,15 +59,28 @@ if(isset($_POST['create_post_title'])){
                 </div>
                 <div class="form-group">
                 	<label for="create_post_description">Description of Your Post:</label>
-                	<textarea class="form-control" id="create_post_description" name="create_post_description" rows="5" placeholder="Description"></textarea>
+                	<textarea class="form-control" id="create_post_description" name="create_post_description" rows="3" placeholder="Description"></textarea>
                 </div>
                 <div class="form-group">
                 	<label for="create_post_tags">Tags:</label>
-                	<textarea class="form-control" id="create_post_tags" name="create_post_tags" rows="5" placeholder="Tags"></textarea>
+                	<textarea class="form-control" id="create_post_tags" name="create_post_tags" rows="1" placeholder="Tags"></textarea>
                 </div>
+                <div id="woah"></div>
                 <button type="submit" class="btn btn-default">Create</button>
+                
             </form>
+            <br />
         </div>
 
     </body>
 </html>
+
+<script>
+function displayVals() {
+	var value = $( '#create_post_category' ).val();
+	$('#woah').html(value);
+}
+
+$( '#create_post_category' ).change( displayVals );
+displayVals();
+</script>

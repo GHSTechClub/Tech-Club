@@ -5,7 +5,30 @@
 }
 
 /* polaroid */
-.col-lg-4 {
-	padding-top: 15px;
+.pol_wrap {
+	padding:15px;
 	background-color:#f2f2f2; 
+	margin-top:20px;
+}
+
+.navbar, .collapse, .navbar-inverse {
+	-webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+#ID {
+	display:none;
+}
+
+.wrapper {
+	background-color:#EEE;
+	padding: 10px;
+}
+
+#nav_sub > .navbar .container-fluid, .navbar-collapse {
+    padding-left:0;
+}
+#nav_sub > .navbar-collapse.in {
+    padding-left:30px;
 }

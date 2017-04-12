@@ -14,9 +14,11 @@
             <br />
             <div class="row-fluid clearfix">
                 <div class="col-lg-4">
-                    <img src="http://media.npr.org/assets/img/2015/04/20/web-17be2f144637eb54f93735131c7d09d5d6c7904b-s900-c85.jpg" width="100%">
-                    <h3>Crash Course Guide to the Web</h3>
-                    <p class="description">A brief guide to everybody's favorite misconception.</p>
+                	<div class="pol_wrap">
+                        <img src="http://media.npr.org/assets/img/2015/04/20/web-17be2f144637eb54f93735131c7d09d5d6c7904b-s900-c85.jpg" width="100%">
+                        <h3>Crash Course Guide to the Web</h3>
+                        <p class="description">A brief guide to everybody's favorite misconception.</p>
+                    </div>
                 </div>
                 <!--
                 <div class="col-lg-4">

@@ -1,0 +1,12 @@
+<?php
+$uri = $_SERVER['REQUEST_URI'];
+//echo $uri;
+?>
+
+<ul class="nav nav-tabs nav-inverse">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+    <li<?php if(strpos($uri, "los_alamos") > 0) { echo ' class="active"'; } ?>><a href="#">Forum</a></li>
+    <li><a href="#">Menu 3</a></li>
+</ul>
