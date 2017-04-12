@@ -1,3 +1,9 @@
+<?php
+$uri = $_SERVER['REQUEST_URI'];
+//echo $uri;
+?>
+
+
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -11,12 +17,19 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li><a href="http://foothillertech.com/club">Home</a></li>
-                <li><a href="http://foothillertech.com/club/pages/announcements.php">Announcements</a></li>
-                <li><a href="http://foothillertech.com/club/pages/projects.php">Projects</a></li>
-            	<li><a href="http://foothillertech.com/club/pages/subjects.php">Documents</a></li>
-                <li><a href="http://foothillertech.com/club/pages/forum/">Forum</a></li>
-                <li><a href="http://foothillertech.com/club/pages/events.php">Events</a></li>
-                <li><a href="http://foothillertech.com/club/pages/about.php">About</a></li>
+                <li<?php if(strpos($uri, "announcements") > 0) { echo ' class="active"'; } ?>><a href="http://foothillertech.com/club/pages/announcements.php">Announcements</a></li>
+                <li<?php if(strpos($uri, "projects") > 0) { echo ' class="active"'; } ?>><a href="http://foothillertech.com/club/pages/projects.php">Projects</a></li>
+            	<li<?php if(strpos($uri, "subjects") > 0) { echo ' class="active"'; } ?>><a href="http://foothillertech.com/club/pages/subjects.php">Documents</a></li>
+                <li class="<?php if(strpos($uri, "forum") > 0) { echo 'active '; } ?>dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Forum <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/club/pages/forum/">Home</a></li>
+                        <li><a href="/club/pages/forum/category/browse">Categories</a></li>
+                        <li><a href="#">Search</a></li>
+                    </ul>
+                </li>
+                <li<?php if(strpos($uri, "events") > 0) { echo ' class="active"'; } ?>><a href="http://foothillertech.com/club/pages/events.php">Events</a></li>
+                <li<?php if(strpos($uri, "about") > 0) { echo ' class="active"'; } ?>><a href="http://foothillertech.com/club/pages/about.php">About</a></li>
             	<!--<li class="dropdown">
                 	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
                 	<span class="caret"></span></a>
