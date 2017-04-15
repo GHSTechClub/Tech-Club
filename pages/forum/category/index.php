@@ -9,7 +9,7 @@
     
     <body>
     
-        <?php include '/home/benrud/public_html/club/assets/includes/nav.html'; ?>
+        <?php include '/home/benrud/public_html/club/assets/includes/nav_forum.html'; ?>
         
         <div class="container mx-auto"> 
         	<h1><?php echo $_GET['category'] ?> Posts</h1>
