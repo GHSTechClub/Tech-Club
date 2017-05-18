@@ -1,5 +1,5 @@
 .description {
-	color:#6A6A6A;
+	color:#909090;
 	padding:6px;
 	font-family: 'Raleway', sans-serif;
 }
@@ -31,4 +31,38 @@
 }
 #nav_sub > .navbar-collapse.in {
     padding-left:30px;
+}
+
+.anchored a {
+    color: #000;
+    text-decoration: none;
+}
+
+.anchored a:hover, a:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+aside {
+    float: right;
+    padding: 1%;
+    width: 26%;
+	
+}
+
+#content {
+    float: left;
+    /*padding: 3%;*/
+    width: 73%;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+@media all and (max-width : 768px) {
+    aside {
+        width: 100%;
+    }
+	#content {
+		width: 100%;
+	}
 }

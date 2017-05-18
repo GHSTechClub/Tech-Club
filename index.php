@@ -114,6 +114,8 @@
             
 		</div>
         
+        <div><?php include '/home/benrud/public_html/club/test.txt'; ?></div>
+        
         <!-- *********************************** Carousel END *********************************** -->
         
     </body>
